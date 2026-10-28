@@ -7,24 +7,33 @@
 
 ## Add or change a value
 
-Let's add a discount code to our cart object.
+Let's add a customer name to our cart object.
 
 ```javascript
 const cart = {
   storeName: 'Corner Market',
   items: ['Bread', 'Milk'],
-  discountCode: 'WELCOME',
+  customerName: 'Sam',
 };
+
+console.log(cart.customerName); // Sam
+```
+
+If the key already exists, `=` changes its value. Let's change our customer's name:
+
+```javascript
+cart.customerName = 'Adam'
+
+console.log(cart.customerName); // Adam
+```
+
+
+If the key does not exist, `=` creates it instead:
+
+```javascript
 
 cart.discountCode = 'SAVE10';
 console.log(cart.discountCode); // SAVE10
-```
-
-The key `discountCode` already exists, so `=` changes its value. If the key does not exist, `=` creates it instead:
-
-```javascript
-cart.customerName = 'Sam';
-console.log(cart.customerName); // Sam
 ```
 
 ## Delete a property
@@ -33,7 +42,7 @@ Suppose we need to remove the discount code. `delete` removes the whole property
 
 ```javascript
 delete cart.discountCode;
-console.log(cart); // { storeName: 'Corner Market', items: [ 'Bread', 'Milk' ], customerName: 'Sam' }
+console.log(cart); // { storeName: 'Corner Market', items: [ 'Bread', 'Milk' ], customerName: 'Adam' }
 console.log(cart.discountCode); // undefined
 ```
 
