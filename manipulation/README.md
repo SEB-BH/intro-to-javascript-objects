@@ -50,4 +50,8 @@ console.log(cart.discountCode); // undefined
 
 ## 🎓 You Do
 
-Add a `deliveryNote` property with a short string. Print it, delete it, then print `cart.deliveryNote` again. Predict what the second print will show before running the file.
+Add a `deliveryNote` property with a short string. 
+
+Print it, delete it, then print `cart.deliveryNote` again. 
+
+Predict what the second print will show before running the file.
